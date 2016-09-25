@@ -1,5 +1,21 @@
 * {
+  margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
+}
+
+/* Main Header */
+
+
+.main-header {
+ background: #333;
+ width: 100%;
+}
+
+/* Main Content */
+
+.container {
+  width: 70%;
+  margin: 0 auto;
 }
 
 
@@ -8,7 +24,6 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
     text-align: right;
 }
 
@@ -24,19 +39,13 @@ li a {
     text-decoration: none;
 }
 
-.project_div {
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top:0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
 
 .intro_header {
   padding: 50px;
   margin: auto;
   width: 75%;
+}
+
+p {
+  width: 70%;
 }
