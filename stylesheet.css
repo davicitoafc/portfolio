@@ -6,17 +6,15 @@
 /* Main Header */
 
 
-.main-header {
- background: #333;
- width: 100%;
- background: url(../background/header.jpeg) no-repeat center;
-}
-
-/* Main Content */
-
 .container {
   width: 70%;
   margin: 0 auto;
+}
+
+.project_header {
+  padding: 50px;
+  margin: auto;
+  width: 75%;
 }
 
 
