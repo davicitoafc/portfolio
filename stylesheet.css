@@ -3,7 +3,7 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-/* Nav */
+/* ---------Nav----------- */
 
 ul {
     background: #333;
@@ -24,6 +24,12 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+}
+
+/* ---------footer----------- */
+
+.footer {
+  background: #333;
 }
 
 /* Background image */
