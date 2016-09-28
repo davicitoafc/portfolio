@@ -58,7 +58,9 @@ body {
 }
 
 .h1_loader {
+  position: relative;
   color: #fff;
-  display: inline;
   text-align: center;
+  margin: 0 auto;
+  top: 57%;
 }
