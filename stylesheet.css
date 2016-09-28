@@ -3,20 +3,7 @@
   font-family: 'Open Sans', sans-serif;
 }
 
-/* Main Header */
-
-
-.container {
-  width: 70%;
-  margin: 0 auto;
-}
-
-.project_header {
-  padding: 50px;
-  margin: auto;
-  width: 75%;
-}
-
+/* Nav */
 
 ul {
     background: #333;
@@ -39,32 +26,20 @@ li a {
     text-decoration: none;
 }
 
+/* Background image */
 
-.intro_header {
-  padding: 50px;
-  margin: auto;
-  width: 75%;
+html {
+	/* This image will be displayed fullscreen */
+	background:url('background/background.jpeg') no-repeat center center;
+
+	/* Ensure the html element always takes up the full height of the browser window */
+	min-height:100%;
+
+	/* The Magic */
+	background-size:cover;
 }
 
-p {
-  font-size: 1em;
-  width: 70%;
-  text-align: justify;
-}
-
-.about_me {
-  line-height: 25px;
-}
-
-.logo {
-    background-size: 100%;
-    width: 100%;
-}
-
-.banner {
-  width: auto;
-}
-
-img {
-  max-width: 100%;
+body {
+	/* Workaround for some mobile browsers */
+	min-height:100%;
 }
