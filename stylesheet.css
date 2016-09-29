@@ -45,6 +45,13 @@ li a:hover {
 
 /* ---------INTRO----------- */
 
+.summary_container {
+  margin-left: 0;
+  margin-left: 0;
+  width: 80vw;
+  text-align: center;
+  padding-top: 2em;
+}
 
 
 .intro_header {
