@@ -45,8 +45,13 @@ li a:hover {
 
 /* ---------INTRO----------- */
 
+section {
+  margin: 0 auto;
+  width: 75%;
+}
+
 .summary_container {
-  margin-left: 0;
+  margin-right: 0;
   margin-left: 0;
   width: 80vw;
   text-align: center;
@@ -57,6 +62,12 @@ li a:hover {
 .intro_header {
   color: white;
   font-size: 2em;
+}
+
+.profile_pic {
+  float: left;
+  border-radius: 45%;
+  display: inline-block;
 }
 
 /* ---------PROJECTS----------- */
