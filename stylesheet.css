@@ -14,6 +14,10 @@
   padding-right: 100px;
 }
 
+.nav_text {
+  font-size: 17px;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -39,11 +43,23 @@ li a:hover {
   color: #458B00;
 }
 
-/* ---------footer----------- */
+/* ---------INTRO----------- */
 
-.footer {
-  background: #333;
+
+
+.intro_header {
+  color: white;
+  font-size: 2em;
 }
+
+/* ---------PROJECTS----------- */
+
+
+.project_header {
+  color: white;
+  font: 1.5em;
+}
+
 
 /* Background image */
 
