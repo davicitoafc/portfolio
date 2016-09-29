@@ -5,8 +5,16 @@
 
 /* ---------Nav----------- */
 
+.nav_container {
+  background: #333;
+  padding: 5px;
+}
+
+.links_container {
+  padding-right: 100px;
+}
+
 ul {
-    background: #333;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -24,6 +32,11 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 1.2em;
+}
+
+li a:hover {
+  color: #458B00;
 }
 
 /* ---------footer----------- */
