@@ -68,7 +68,8 @@ section {
 
 .intro_header {
   color: white;
-  font-size: 2em;
+  font-size: 2.5em;
+  padding-bottom: 20px;
 }
 
 .profile_pic {
@@ -81,12 +82,27 @@ section {
   color: white;
 }
 
+.intro_container {
+  padding-left: 50px;
+  width: 50%;
+}
+
 /* ---------PROJECTS----------- */
 
 
 .project_header {
   color: white;
   font: 1.5em;
+}
+
+.project_container {
+  color: white;
+  float: left;
+}
+
+.project_div {
+  float: left;
+  margin: 50px;
 }
 
 
