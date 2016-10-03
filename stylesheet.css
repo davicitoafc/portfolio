@@ -43,6 +43,13 @@ li a:hover {
   color: #458B00;
 }
 
+/* ---------MAIN LAYOUT STYLE----------- */
+
+.main_layout {
+  width: 70%;
+  margin: 0 auto;
+}
+
 /* ---------INTRO----------- */
 
 section {
@@ -54,8 +61,8 @@ section {
   margin-right: 0;
   margin-left: 0;
   width: 80vw;
-  text-align: center;
   padding-top: 2em;
+  height: 300px;
 }
 
 
@@ -68,6 +75,10 @@ section {
   float: left;
   border-radius: 45%;
   display: inline-block;
+}
+
+.intro_info {
+  color: white;
 }
 
 /* ---------PROJECTS----------- */
