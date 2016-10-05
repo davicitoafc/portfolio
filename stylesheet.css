@@ -5,6 +5,13 @@
 
 /* ---------Nav----------- */
 
+.nav_bar {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  background: transparent;
+}
+
 .nav_container {
   background: #333;
   padding: 5px;
@@ -43,86 +50,49 @@ li a:hover {
   color: #458B00;
 }
 
-/* ---------MAIN LAYOUT STYLE----------- */
+/* ---------Main_page----------- */
 
-.main_layout {
-  width: 70%;
-  margin: 0 auto;
+.big_pic {
+   background: url("images/background.jpeg") no-repeat center center fixed;
+   background-size: cover;
+   margin: 0;
+   padding-bottom: 0;
+   position: relative;
+  }
+
+  .vertical-center {
+     min-height: 100%;
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+  }
+
+  .big_pic .container {
+    position: relative;
+    z-index: 1;
 }
 
-/* ---------INTRO----------- */
-
-section {
-  margin: 0 auto;
-  width: 75%;
-}
-
-.summary_container {
-  margin-right: 0;
-  margin-left: 0;
-  width: 80vw;
-  padding-top: 2em;
-  height: 300px;
-}
-
-
-.intro_header {
+.big_pic p {
   color: white;
-  font-size: 2.5em;
-  padding-bottom: 20px;
+  text-align: center;
+  font-size: 2em;
 }
 
-.profile_pic {
-  float: left;
-  border-radius: 45%;
-  display: inline-block;
+.big_pic h1 {
+  color: white;
+  text-align: center;
+  font-size: 4em;
 }
 
-.intro_info {
+/* ---------ABOUT ME----------- */
+
+.about_me {
+  background: black;
   color: white;
 }
 
-.intro_container {
-  padding-left: 50px;
-  width: 50%;
-}
 
 /* ---------PROJECTS----------- */
-
-
-.project_header {
-  color: white;
-  font: 1.5em;
-}
-
-.project_container {
-  color: white;
-  float: left;
-}
-
-.project_div {
-  float: left;
-  margin: 50px;
-}
-
-
-/* Background image */
-
-html {
-	/* This image will be displayed fullscreen */
-	background:url('images/background.jpeg') no-repeat center center;
-
-	/* Ensure the html element always takes up the full height of the browser window */
-	min-height:100%;
-
-	/* The Magic */
-	background-size:cover;
-}
-
-body {
-	/* Workaround for some mobile browsers */
-	min-height:100%;
-}
 
 
 /* Loading Image */
