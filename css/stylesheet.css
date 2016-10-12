@@ -3,6 +3,13 @@
   font-family: 'Open Sans', sans-serif;
 }
 
+section h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+
 /* ---------Nav----------- */
 
 .nav_bar {
@@ -10,6 +17,7 @@
   z-index: 2;
   width: 100%;
   background: transparent;
+  transition: 1s all ease;
 }
 
 .nav_container {
@@ -43,7 +51,7 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 1.2em;
+    font-size: 1.7em;
 }
 
 li a:hover {
@@ -91,6 +99,16 @@ li a:hover {
   color: white;
 }
 
+.text_uppercase {
+  text-transform: uppercase;
+}
+
+section#aboutMe {
+    font-size: 16px;
+    background-color: #fff;
+    color: #272727;
+    padding: 35px 0 35px 0;
+}
 
 /* ---------PROJECTS----------- */
 
