@@ -26,6 +26,9 @@ section h1 {
   border: none;
   background: transparent;
   transition: 1s all ease;
+}
+
+#myNavbar a {
   color: white;
 }
 
@@ -38,29 +41,12 @@ section h1 {
   font-size: 17px;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    text-align: right;
-}
-
-li {
-    float: right;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 1.3em;
-}
-
 li a:hover {
   color: #458B00;
+}
+
+.navBack,.navbar-fixed-top {
+    background-color: #272727;
 }
 
 /* ---------Main_page----------- */
