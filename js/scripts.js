@@ -1,5 +1,3 @@
-
-
 // Jquery for loading animation //
 
 $(window).on('load', function (e) {
@@ -16,7 +14,7 @@ $('.navbar-toggle').click(function() {
        $('.navbar-header').toggleClass('navBack');
 });
 
-// transition navbar //
+// transition effect on navbar //
 
 $(window).scroll(function() {
 
@@ -29,5 +27,5 @@ $(window).scroll(function() {
   } else if (nav_position.top < 10) {
     $('.navbar').removeClass('nav_scroll');
   }
-  
+
 });
