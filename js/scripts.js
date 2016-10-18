@@ -6,3 +6,10 @@ $(window).on('load', function (e) {
     $(".loader").fadeOut("slow");
   }
 })
+
+// change color of nav collapsed //
+
+$('.navbar-toggle').click(function() {
+       $('#myNavbar').toggleClass('navBack');
+       $('.navbar-header').toggleClass('navBack');
+});
