@@ -21,11 +21,20 @@ $(window).scroll(function() {
   var nav = $('.navbar');
   var nav_position = nav.offset();
 
+  var about = $('.about_title');
+  var about_position = about.offset();
+
 
   if (nav_position.top > 10) {
     $('.navbar').addClass('nav_scroll');
   } else if (nav_position.top < 10) {
     $('.navbar').removeClass('nav_scroll');
+  }
+
+  if (about_position.top > 700) {
+    about.addClass('animated fadeIn');
+  } else if (about_position.top < 700) {
+    about.removeClass('fadeIn').addClass('fadeOut')
   }
 
 });
