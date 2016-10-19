@@ -33,6 +33,9 @@ $(window).scroll(function() {
   var about = $('.about_title');
   var about_position = about.offset();
 
+  var story = $('.my_story')
+  var story_position = story.offset();
+
 
   if (nav_position.top > 10) {
     $('.navbar').addClass('nav_scroll');
@@ -42,9 +45,10 @@ $(window).scroll(function() {
 
 // fadeIn effect for about h1 //
 
-  var st = $(this).scrollTop();
+  var st = $(this).scrollTop()
     if (st > lastScrollTop){
     about.addClass('animated fadeInLeft');
+    story.addClass('animated fadeInLeft');
    }
 
   lastScrollTop = st;
