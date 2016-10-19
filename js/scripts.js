@@ -15,6 +15,8 @@ $('.navbar-toggle').click(function() {
 });
 
 // transition effect on navbar //
+var lastScrollTop = 0;
+
 
 $(window).scroll(function() {
 
@@ -31,10 +33,12 @@ $(window).scroll(function() {
     $('.navbar').removeClass('nav_scroll');
   }
 
-  if (about_position.top > 700) {
-    about.addClass('animated fadeIn');
-  } else if (about_position.top < 700) {
-    about.removeClass('fadeIn').addClass('fadeOut')
-  }
+
+  var st = $(this).scrollTop();
+    if (st > lastScrollTop){
+      setTimeout((about.addClass('animated fadeInUp'), 4000));
+   }
+
+  lastScrollTop = st;
 
 });
