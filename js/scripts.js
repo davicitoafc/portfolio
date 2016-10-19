@@ -5,6 +5,13 @@ $(window).on('load', function (e) {
   function loader() {
     $(".loader").fadeOut("slow");
   }
+
+  function header() {
+    $(".title_name").addClass("animated bounceInUp");
+    $(".title_job").addClass("animated bounceInUp");
+  }
+
+  header();
 })
 
 // change color of nav collapsed //
@@ -33,10 +40,11 @@ $(window).scroll(function() {
     $('.navbar').removeClass('nav_scroll');
   }
 
+// fadeIn effect for about h1 //
 
   var st = $(this).scrollTop();
     if (st > lastScrollTop){
-      setTimeout((about.addClass('animated fadeInUp'), 4000));
+    about.addClass('animated fadeInLeft');
    }
 
   lastScrollTop = st;

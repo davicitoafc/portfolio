@@ -93,6 +93,7 @@ li a:hover {
 .about_me {
   background: black;
   color: white;
+  -webkit-animation-delay: 3s;
 }
 
 section#aboutMe {
