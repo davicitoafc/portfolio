@@ -143,3 +143,21 @@ section#aboutMe {
   margin: 0 auto;
   top: 57%;
 }
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+ .my_story {
+   font-size: 15px;
+   margin: 0 auto;
+ }
+  .about_title {
+    font-size: 2em;
+  }
+
+  .about {
+    width: 75%;
+    text-align: center;
+  }
+
+}
