@@ -133,13 +133,19 @@ section#aboutMe {
   padding-top: 50px;
 }
 
-.project_div:hover {
+.project_div:hover  {
     opacity: .5;
     transition: 1s ease;
 }
 
 .project_div {
     padding: 20px;
+    cursor: pointer;
+}
+
+.project_div:hover .img-responsive {
+  border: 3px solid black;
+  transition-property: ease;
 }
 
 /* Loading Image */
