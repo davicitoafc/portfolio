@@ -152,6 +152,10 @@ section#aboutMe {
 /* Media Queries */
 
 @media (max-width: 600px) {
+
+
+/* About section */
+
  .my_story {
    font-size: 15px;
    margin: 0 auto;
@@ -163,6 +167,16 @@ section#aboutMe {
   .about {
     width: 75%;
     text-align: center;
+  }
+
+  /* Project section */
+
+  .project {
+    text-align: center;
+  }
+
+  .projects_title {
+    font-size: 2em;
   }
 
 }
