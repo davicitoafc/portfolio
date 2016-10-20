@@ -133,6 +133,15 @@ section#aboutMe {
   padding-top: 50px;
 }
 
+.project_div:hover {
+    opacity: .5;
+    transition: 1s ease;
+}
+
+.project_div {
+    padding: 20px;
+}
+
 /* Loading Image */
 
 .loader {
