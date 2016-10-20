@@ -123,6 +123,16 @@ section#aboutMe {
 /* ---------PROJECTS----------- */
 
 
+#projects {
+  background-color: grey;
+  color: white;
+  padding-top: 50px;
+}
+
+#first_row {
+  padding-top: 50px;
+}
+
 /* Loading Image */
 
 .loader {
@@ -141,12 +151,6 @@ section#aboutMe {
   text-align: center;
   margin: 0 auto;
   top: 57%;
-}
-
-#projects {
-  background-color: grey;
-  color: white;
-  padding-top: 50px;
 }
 
 /* Media Queries */
