@@ -117,6 +117,7 @@ section#aboutMe {
    font-size: 1.4em;
    margin-left: 30px;
    padding-bottom: 50px;
+   text-align: justify;
   }
 
 .profile_pic {
@@ -160,7 +161,7 @@ section#aboutMe {
 
 .closes {
     display: block;
-    border: none;
+    border-width: thin;
     outline: none;
     width: 2em;
     height: 2em;
@@ -227,6 +228,7 @@ button.closes:hover {
  .my_story {
    font-size: 15px;
    margin: 0 auto;
+   line-height: 35px;
  }
   .about_title {
     font-size: 2em;
