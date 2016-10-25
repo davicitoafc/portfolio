@@ -1,3 +1,25 @@
+// modals //
+
+$(function(){
+
+var hitchr = $('.hitchr');
+var modal = $('.modals');
+var closeHitchr = $('.closes');
+
+function fadeInModal() {
+  modal.fadeIn()
+}
+
+function fadeOutModal() {
+  modal.fadeOut()
+}
+
+hitchr.on('click', fadeInModal);
+closeHitchr.on('click', fadeOutModal);
+
+});
+
+
 // Jquery for loading animation //
 
 $(window).on('load', function (e) {
@@ -11,8 +33,9 @@ $(window).on('load', function (e) {
     $(".title_job").addClass("animated bounceInUp");
   }
 
-  header();
-})
+header();
+
+});
 
 // change color of nav collapsed //
 
@@ -28,18 +51,18 @@ var lastScrollTop = 0;
 $(window).scroll(function() {
 
   var nav = $('.navbar');
-  var nav_position = nav.offset();
+  var navPosition = nav.offset();
 
   var about = $('.about_title');
-  var about_position = about.offset();
+  var aboutPosition = about.offset();
 
   var story = $('.my_story')
-  var story_position = story.offset();
+  var storyPosition = story.offset();
 
 
-  if (nav_position.top > 10) {
+  if (navPosition.top > 10) {
     $('.navbar').addClass('nav_scroll');
-  } else if (nav_position.top < 10) {
+  } else if (navPosition.top < 10) {
     $('.navbar').removeClass('nav_scroll');
   }
 

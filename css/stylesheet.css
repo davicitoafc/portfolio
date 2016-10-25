@@ -88,6 +88,10 @@ li a:hover {
   font-size: 4em;
 }
 
+#hidden {
+  visibility: hidden;
+}
+
 /* ---------ABOUT ME----------- */
 
 .about_me {
@@ -124,7 +128,7 @@ section#aboutMe {
 
 
 #projects {
-  background-color: grey;
+  background-color: #808080;
   color: white;
   padding-top: 50px;
 }
@@ -141,11 +145,55 @@ section#aboutMe {
 .project_div {
     padding: 20px;
     cursor: pointer;
+    position: relative;
 }
 
-.project_div:hover .img-responsive {
-  border: 3px solid black;
-  transition-property: ease;
+.modals {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(30,30,30,0.8);
+}
+
+.closes {
+    display: block;
+    border: none;
+    outline: none;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    font: 2em Arial;
+    background-color: #fff;
+    color: #000;
+    border-radius: 0.5em;
+    line-height: 0;
+    position: absolute;
+    top: 0.25em;
+    right: 0.25em;
+}
+
+.hitchrDescription {
+  display: block;
+  width: 1000px;
+  height: 40em;
+  padding: 2em;
+  background-color: #fff;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 2%;
+}
+
+button.closes:hover {
+    background-color: #000;
+    color: #fff;
+    transition: .5s ease;
 }
 
 /* Loading Image */
@@ -167,6 +215,7 @@ section#aboutMe {
   margin: 0 auto;
   top: 57%;
 }
+
 
 /* Media Queries */
 
