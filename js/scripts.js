@@ -65,13 +65,6 @@ $(window).on('load', function (e) {
     $(".loader").fadeOut("slow");
   }
 
-  // function header() {
-  //   $(".title_name").addClass("animated bounceInUp");
-  //   $(".title_job").addClass("animated bounceInUp");
-  // }
-
-// header();
-
 });
 
 // change color of nav collapsed //
