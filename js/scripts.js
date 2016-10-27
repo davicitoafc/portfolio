@@ -65,12 +65,12 @@ $(window).on('load', function (e) {
     $(".loader").fadeOut("slow");
   }
 
-  function header() {
-    $(".title_name").addClass("animated bounceInUp");
-    $(".title_job").addClass("animated bounceInUp");
-  }
+  // function header() {
+  //   $(".title_name").addClass("animated bounceInUp");
+  //   $(".title_job").addClass("animated bounceInUp");
+  // }
 
-header();
+// header();
 
 });
 
@@ -102,21 +102,51 @@ $(window).scroll(function() {
     $('.navbar').removeClass('nav_scroll');
   }
 
-  var $animation_elements = $('.animation-element');
-  var $window = $(window);
+// animation for header //
+
+var $header_name = $('.title_name')
+var $header_job = $('.title_job')
+
+$header_name.waypoint(function() {
+  $(this.element).addClass("animated bounceInUp fade");
+}, {
+  offset: '90%'
+});
+
+$header_job.waypoint(function() {
+  $(this.element).addClass("animated bounceInUp fade");
+}, {
+  offset: '90%'
+});
 
 
+// fade in for projects //
+
+var $projectsTitle = $('.projects_title')
+
+$projectsTitle.waypoint(function() {
+       $(this.element).addClass('animated fadeInUp fade');
+   }, {
+       offset: '70%'
+   });
 
 
 
 // fadeIn effect for about section //
 
-  var st = $(this).scrollTop()
-    if (st > lastScrollTop){
-    about.addClass('animated fadeInLeft');
-    story.addClass('animated fadeInLeft');
-   }
+about.waypoint(function() {
+  about.addClass('animated fadeInLeft fade');
+  story.addClass('animated fadeInLeft fade');
+}, {
+    offset: '70%'
+});
 
-lastScrollTop = st;
+//   var st = $(this).scrollTop()
+//     if (st > lastScrollTop){
+//     about.addClass('animated fadeInLeft');
+//     story.addClass('animated fadeInLeft');
+//    }
+//
+// lastScrollTop = st;
 
 });

@@ -128,10 +128,19 @@ section h1 {
 
 
 #projects {
-  background-color: #333;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   padding: 50px;
 }
+
+.hidden_element {
+  opacity: 0;
+}
+
+.fade {
+  opacity: 1;
+}
+
 
 #first_row {
   padding-top: 50px;
