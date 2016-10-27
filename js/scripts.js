@@ -2,12 +2,22 @@
 
 $(function(){
 
-
 // Hitchr Modal //
 
 var hitchr = $('.hitchr');
 var modal1 = $('.modal1');
 var closeHitchr = $('.closes');
+
+function fadeInModal1() {
+  modal1.fadeIn();
+}
+
+function fadeOutModal1() {
+  modal1.fadeOut()
+}
+
+hitchr.on('click', fadeInModal1);
+closeHitchr.on('click', fadeOutModal1);
 
 // Crowdfunder Modal //
 
@@ -15,30 +25,34 @@ var crowdfunder = $('.crowdfunder');
 var modal2 = $('.modal2');
 var closeCrowdFunder = $('.closes');
 
+function fadeInModal2() {
+  modal2.fadeIn();
+}
+
+function fadeOutModal2() {
+  modal2.fadeOut()
+}
+
+crowdfunder.on('click', fadeInModal2);
+closeCrowdFunder.on('click', fadeOutModal2);
+
 
 // Porfolio Site Modal //
 
-var portfolio = $('.crowdfunder');
+var portfolio = $('.portfolio');
 var modal3 = $('.modal3');
 var closePortfolio = $('.closes');
 
-
-function fadeInModal() {
-  modal1.fadeIn();
+function fadeInModal3() {
+  modal3.fadeIn();
 }
 
-function fadeOutModal() {
-  modal1.fadeOut()
+function fadeOutModal3() {
+  modal3.fadeOut()
 }
 
-hitchr.on('click', fadeInModal);
-closeHitchr.on('click', fadeOutModal);
-
-crowdfunder.on('click', fadeInModal);
-closeCrowdFunder.on('click', fadeOutModal);
-
-hitchr.on('click', fadeInModal);
-closePortfolio.on('click', fadeOutModal);
+portfolio.on('click', fadeInModal3);
+closePortfolio.on('click', fadeOutModal3);
 
 });
 
