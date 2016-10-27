@@ -5,8 +5,9 @@
 
 section h1 {
     font-size: 5rem;
-    font-weight: bold;
     margin-bottom: 30px;
+    font-weight: 400;
+    text-align: center;
 }
 
 .container {
@@ -26,6 +27,7 @@ section h1 {
   border: none;
   background: transparent;
   transition: 1s all ease;
+  border-radius: 0px;
 }
 
 #myNavbar a {
@@ -41,7 +43,7 @@ section h1 {
   font-size: 17px;
 }
 
-li a:hover {
+#myNavbar ul li a:hover {
   color: #458B00;
 }
 
@@ -52,6 +54,11 @@ li a:hover {
 .nav_scroll {
   background-color: #272727;
   transition: 1s all ease;
+}
+
+#navHeader {
+  color: white;
+  font-size: 17px;
 }
 
 /* ---------Main_page----------- */
@@ -100,23 +107,15 @@ li a:hover {
   -webkit-animation-delay: 3s;
 }
 
-section#aboutMe {
-    font-size: 16px;
-    background-color: #fff;
-    color: #272727;
-    padding: 35px 0 35px 0;
-}
+#about_me {
+    padding: 50px;
+  }
 
-.about_title {
-  padding-top: 50px;
-}
 
 .my_story {
    line-height: 50px;
    width: 100%;
    font-size: 1.4em;
-   margin-left: 30px;
-   padding-bottom: 50px;
    text-align: justify;
   }
 
@@ -129,9 +128,9 @@ section#aboutMe {
 
 
 #projects {
-  background-color: #808080;
-  color: white;
-  padding-top: 50px;
+  background-color: #333;
+  color: #fff;
+  padding: 50px;
 }
 
 #first_row {
@@ -149,7 +148,7 @@ section#aboutMe {
     position: relative;
 }
 
-.modals {
+.modal1, .modal2, .modal3 {
   display: none;
   position: fixed;
   top: 0;
@@ -161,11 +160,10 @@ section#aboutMe {
 
 .closes {
     display: block;
-    border-width: thin;
+    border-style: none;
     outline: none;
     width: 2em;
     height: 2em;
-    border-radius: 50%;
     font: 2em Arial;
     background-color: #fff;
     color: #000;
@@ -217,6 +215,11 @@ button.closes:hover {
   top: 57%;
 }
 
+/* Contact */
+
+#contact {
+  background: #202121;
+}
 
 /* Media Queries */
 
@@ -282,7 +285,7 @@ button.closes:hover {
 @media (max-width: 414px) {
 
   .hitchrDescription {
-    width: 400px;
+    width: 390px;
     height: 30em;
   }
 

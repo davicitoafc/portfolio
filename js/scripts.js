@@ -2,20 +2,43 @@
 
 $(function(){
 
+
+// Hitchr Modal //
+
 var hitchr = $('.hitchr');
-var modal = $('.modals');
+var modal1 = $('.modal1');
 var closeHitchr = $('.closes');
 
+// Crowdfunder Modal //
+
+var crowdfunder = $('.crowdfunder');
+var modal2 = $('.modal2');
+var closeCrowdFunder = $('.closes');
+
+
+// Porfolio Site Modal //
+
+var portfolio = $('.crowdfunder');
+var modal3 = $('.modal3');
+var closePortfolio = $('.closes');
+
+
 function fadeInModal() {
-  modal.fadeIn()
+  modal1.fadeIn();
 }
 
 function fadeOutModal() {
-  modal.fadeOut()
+  modal1.fadeOut()
 }
 
 hitchr.on('click', fadeInModal);
 closeHitchr.on('click', fadeOutModal);
+
+crowdfunder.on('click', fadeInModal);
+closeCrowdFunder.on('click', fadeOutModal);
+
+hitchr.on('click', fadeInModal);
+closePortfolio.on('click', fadeOutModal);
 
 });
 
@@ -45,7 +68,7 @@ $('.navbar-toggle').click(function() {
 });
 
 // transition effect on navbar //
-var lastScrollTop = 0;
+var lastScrollTop = 100;
 
 
 $(window).scroll(function() {
@@ -59,14 +82,20 @@ $(window).scroll(function() {
   var story = $('.my_story')
   var storyPosition = story.offset();
 
-
   if (navPosition.top > 10) {
     $('.navbar').addClass('nav_scroll');
   } else if (navPosition.top < 10) {
     $('.navbar').removeClass('nav_scroll');
   }
 
-// fadeIn effect for about h1 //
+  var $animation_elements = $('.animation-element');
+  var $window = $(window);
+
+
+
+
+
+// fadeIn effect for about section //
 
   var st = $(this).scrollTop()
     if (st > lastScrollTop){
@@ -74,6 +103,6 @@ $(window).scroll(function() {
     story.addClass('animated fadeInLeft');
    }
 
-  lastScrollTop = st;
+lastScrollTop = st;
 
 });
