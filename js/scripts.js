@@ -56,6 +56,19 @@ closePortfolio.on('click', fadeOutModal3);
 
 });
 
+// hover effect for project divs //
+
+$(".img-responsive").mouseover(function() {
+    $(this).css('opacity','.5')
+});
+
+$(".img-responsive").mouseout(function() {
+    $(this).css('opacity','1')
+});
+
+
+
+
 
 // Jquery for loading animation //
 
@@ -97,49 +110,47 @@ $(window).scroll(function() {
 
 // animation for header //
 
-var $header_name = $('.title_name')
-var $header_job = $('.title_job')
+  var $header_name = $('.title_name')
+  var $header_job = $('.title_job')
 
-$header_name.waypoint(function() {
-  $(this.element).addClass("animated bounceInUp fade");
-}, {
-  offset: '90%'
-});
+  $header_name.waypoint(function() {
+    $(this.element).addClass("animated bounceInUp fade");
+  }, {
+    offset: '90%'
+  });
 
-$header_job.waypoint(function() {
-  $(this.element).addClass("animated bounceInUp fade");
-}, {
-  offset: '90%'
-});
-
-
-// fade in for projects //
-
-var $projectsTitle = $('.projects_title')
-
-$projectsTitle.waypoint(function() {
-       $(this.element).addClass('animated fadeInUp fade');
-   }, {
-       offset: '70%'
-   });
+  $header_job.waypoint(function() {
+    $(this.element).addClass("animated bounceInUp fade");
+  }, {
+    offset: '90%'
+  });
 
 
+// fade in for projects section //
+
+  var $projectsTitle = $('.projects_title')
+
+  $projectsTitle.waypoint(function() {
+         $(this.element).addClass('animated fadeInUp fade');
+     }, {
+         offset: '70%'
+     });
+
+  var $projectDivs = $('.project_div')
+
+  $projectDivs.waypoint(function() {
+    $(this.element).addClass('animated fadeInUp fade')
+  }, {
+      offset: '70%'
+  });
 
 // fadeIn effect for about section //
 
-about.waypoint(function() {
-  about.addClass('animated fadeInLeft fade');
-  story.addClass('animated fadeInLeft fade');
-}, {
-    offset: '70%'
-});
-
-//   var st = $(this).scrollTop()
-//     if (st > lastScrollTop){
-//     about.addClass('animated fadeInLeft');
-//     story.addClass('animated fadeInLeft');
-//    }
-//
-// lastScrollTop = st;
+  about.waypoint(function() {
+    about.addClass('animated fadeInLeft fade');
+    story.addClass('animated fadeInLeft fade');
+  }, {
+      offset: '70%'
+  });
 
 });
