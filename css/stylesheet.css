@@ -285,6 +285,7 @@ footer p {
   .model_style {
     width: 700px;
     height: 30em;
+    overflow: scroll;
   }
 
 }
