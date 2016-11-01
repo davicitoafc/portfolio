@@ -102,24 +102,6 @@ $(window).scroll(function() {
     $('.navbar').removeClass('nav_scroll');
   }
 
-// animation for header //
-
-  var $header_name = $('.title_name')
-  var $header_job = $('.title_job')
-
-  $header_name.waypoint(function() {
-    $(this.element).addClass("animated bounceInUp fade");
-  }, {
-    offset: '90%'
-  });
-
-  $header_job.waypoint(function() {
-    $(this.element).addClass("animated bounceInUp fade");
-  }, {
-    offset: '90%'
-  });
-
-
 // fade in for projects section //
 
   var $projectsTitle = $('.projects_title')
