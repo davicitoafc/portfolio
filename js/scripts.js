@@ -1,5 +1,4 @@
 // modals //
-
 $(function(){
 
 // Hitchr Modal //
@@ -67,9 +66,6 @@ $(".img-responsive").mouseout(function() {
 });
 
 
-
-
-
 // Jquery for loading animation //
 
 $(window).on('load', function (e) {
@@ -88,8 +84,6 @@ $('.navbar-toggle').click(function() {
 });
 
 // transition effect on navbar //
-var lastScrollTop = 100;
-
 
 $(window).scroll(function() {
 

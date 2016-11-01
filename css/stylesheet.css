@@ -17,7 +17,6 @@ section h1 {
   margin-left: auto;
 }
 
-
 /* ---------Nav----------- */
 
 .navbar {
@@ -59,6 +58,7 @@ section h1 {
 #navHeader {
   color: white;
   font-size: 17px;
+  padding-left: 30px;
 }
 
 /* ---------Main_page----------- */
@@ -112,7 +112,6 @@ section h1 {
     padding: 50px;
   }
 
-
 .my_story {
    line-height: 50px;
    width: 100%;
@@ -127,7 +126,6 @@ section h1 {
 
 /* ---------PROJECTS----------- */
 
-
 #projects {
   background-color: #fff;
   color: #000;
@@ -141,7 +139,6 @@ section h1 {
 .fade {
   opacity: 1;
 }
-
 
 #first_row {
   padding-top: 50px;
@@ -231,10 +228,29 @@ button.closes:hover {
   margin-top: 50px;
 }
 
+.contact_info {
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.social_media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+  padding-bottom: 40px;
+}
+
+footer p {
+  text-align: center;
+  margin: 0 auto;
+  background-color: #000;
+  color: #fff;
+}
+
 /* Media Queries */
 
 @media (max-width: 866px) {
-
 
 /* About section */
 
@@ -294,6 +310,9 @@ button.closes:hover {
      height: 1em;
   }
 
+  .social_media {
+    width: 100%;
+  }
 }
 
 @media (max-width: 414px) {
@@ -307,7 +326,6 @@ button.closes:hover {
      width: 1em;
      height: 1em;
   }
-
 }
 
 @media (max-width: 375px) {
@@ -324,7 +342,6 @@ button.closes:hover {
 
 }
 
-
 @media (max-width: 320px) {
 
   .model_style {
@@ -336,5 +353,4 @@ button.closes:hover {
      width: 1em;
      height: 1em;
   }
-
 }
