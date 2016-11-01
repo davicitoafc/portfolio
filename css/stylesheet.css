@@ -297,6 +297,9 @@ footer p {
     height: 30em;
   }
 
+  .big_pic {
+    background-attachment: scroll;
+  }
 }
 
 @media (max-width: 425px) {
