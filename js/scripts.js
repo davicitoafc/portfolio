@@ -69,9 +69,10 @@ $(".img-responsive").mouseout(function() {
 // Jquery for loading animation //
 
 $(window).on('load', function (e) {
-  setTimeout(loader, 3000);
+  setTimeout(loader, 500);
   function loader() {
-    $(".loader").fadeOut("slow");
+    $(".title_name").addClass("animated fadeIn fade");
+    $(".title_job").addClass("animated fadeIn fade");
   }
 
 });
