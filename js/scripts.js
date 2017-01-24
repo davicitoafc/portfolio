@@ -53,6 +53,40 @@ function fadeOutModal3() {
 portfolio.on('click', fadeInModal3);
 closePortfolio.on('click', fadeOutModal3);
 
+// pickupApp Site Modal //
+
+var pickupApp = $('.pickupApp');
+var modal4 = $('.modal4');
+var closepickupApp = $('.closes');
+
+function fadeInModal4() {
+  modal4.fadeIn();
+}
+
+function fadeOutModal4() {
+  modal4.fadeOut()
+}
+
+pickupApp.on('click', fadeInModal4);
+closepickupApp.on('click', fadeOutModal4);
+
+// Esra Tortumlu Site Modal //
+
+var esratortumlu = $('.esratortumlu');
+var modal5 = $('.modal5');
+var closeEsraTortumlu = $('.closes');
+
+function fadeInModal5() {
+  modal5.fadeIn();
+}
+
+function fadeOutModal5() {
+  modal5.fadeOut()
+}
+
+esratortumlu.on('click', fadeInModal5);
+closeEsraTortumlu.on('click', fadeOutModal5);
+
 });
 
 // hover effect for project divs //
