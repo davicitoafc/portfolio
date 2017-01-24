@@ -102,14 +102,10 @@ section h1 {
 
 /* ---------ABOUT ME----------- */
 
-.about_me {
-  background: black;
-  color: white;
-  -webkit-animation-delay: 3s;
-}
-
 #about_me {
     padding: 50px;
+    background-color: black;
+    color: white;
   }
 
 .my_story {
